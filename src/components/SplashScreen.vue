@@ -5,7 +5,7 @@
     <div class="logo">
       <img src="../assets/lotus-position.png">
     </div>
-    <button>NEXT</button>
+    <v-ons-button class="button">NEXT</v-ons-button>
 
   </div>
 </template>
@@ -48,8 +48,9 @@ img{
 
 }
 
-button{
+.button{
   background: whitesmoke;
   margin-top: 20px;
+  color: #E28C8D
 }
 </style>
