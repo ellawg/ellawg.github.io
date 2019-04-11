@@ -2,7 +2,7 @@
   <div class="practice">
     <v-ons-page>
       <div class="card" v-for="practice in practices" :key="practice.id">
-          <div class="practice-header" @click="$router.push({ name: 'PracticeInfo', params: { practiceId: practice.id }})">{{practice.name}}</div>
+          <div class="practice-header" @click="$router.push({ name: 'PracticeInfo', params: { practiceId: practice.id, practice: practice }})">{{practice.name}}</div>
       </div>
       <!--<PracticeCard/>-->
     </v-ons-page>
