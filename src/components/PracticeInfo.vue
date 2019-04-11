@@ -1,14 +1,15 @@
 <template>
-  <div class="practice-card">
+  <div class="practice-info">
     <v-ons-card>
-      <div class="title">{{card.name}}</div>
+      <p>hej</p>
+      <div class="title">{{$this.route.params}}</div>
     </v-ons-card>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'PracticeCard',
+  name: 'PracticeInfo',
 }
 </script>
 

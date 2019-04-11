@@ -1,10 +1,10 @@
 <template>
   <div class="practice">
     <v-ons-page>
-      <div class="card"  v-for="practice in practices" :key="practice.id">
-        <div class="practice-header" v-bind="practice">{{practice.name}}</div>
+      <div class="card" v-for="practice in practices" :key="practice.id">
+          <div class="practice-header" @click="$router.push({ name: 'PracticeInfo', params: { practiceId: practice.id }})">{{practice.name}}</div>
       </div>
-      <PracticeCard/>
+      <!--<PracticeCard/>-->
     </v-ons-page>
   </div>
 </template>
