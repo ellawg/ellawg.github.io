@@ -1,26 +1,25 @@
 <template>
-  <div class="container">
-    <Header/>
-    <PracticeList/>
-  </div>
+  <v-ons-page>
+    <v-ons-tabbar position="top" :index="0" :tabs="tabs">
+    </v-ons-tabbar>
+  </v-ons-page>
 </template>
 
 <script>
-import Header from "./Header"
-import PracticeList from "./PracticeList"
+//import Header from "./Header"
+import PracticeInfo from "./PracticeInfo"
+import PracticeInfo2 from "./PracticeInfo2"
 
 export default {
-
-  components: {
-  Header,
-  PracticeList,
-  },
-  data(){
-    return {
-
+  data: function () {
+        return {
+            tabs: [
+                {label: 'Feet', page: PracticeInfo},
+                {label: 'Shoulders', page: PracticeInfo2}
+            ]
+        }
     }
-  }
-}
+};
 </script>
 
 

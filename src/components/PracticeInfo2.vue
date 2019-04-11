@@ -1,7 +1,7 @@
 <template>
   <div class="practice-info">
     <v-ons-card>
-			<h1 class="title">Feel Your Feet</h1>
+			<h1 class="title">Feel Your</h1>
 			<ul>
 				<li>Stand on your feet.</li>
 				<li>Experience the contact with the ground.</li>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "PracticeInfo",
+  name: "PracticeInfo2",
 };
 //<div class="title">{{$this.route.params.practice.name}}</div>
 </script>
