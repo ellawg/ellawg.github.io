@@ -3,6 +3,7 @@
     <Header/>
     <v-ons-card>
       <div class="title">{{practice.name}}</div>
+      <img :src="image" />
       <ul class="info-list">
         <li v-for="(move, index) in practice.moves" :key="index">{{move}}</li>
       </ul>
@@ -15,7 +16,8 @@ export default {
   name: "PracticeInfo",
   data() {
     return {
-      practice: this.$route.params.practice
+      practice: this.$route.params.practice,
+      image: '../assets/' + this.$route.params.practice.image
     };
   }
 };
