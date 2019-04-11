@@ -1,6 +1,6 @@
 <template>
   <v-ons-page>
-    <v-ons-tabbar position="top" :index="0" :tabs="tabs">
+    <v-ons-tabbar position="top" :index.sync="activeIndex" :tabs="tabs">
     </v-ons-tabbar>
   </v-ons-page>
 </template>
@@ -11,8 +11,9 @@ import PracticeInfo from "./PracticeInfo"
 import PracticeInfo2 from "./PracticeInfo2"
 
 export default {
-  data: function () {
+  data() {
         return {
+            activeIndex: 0,
             tabs: [
                 {label: 'Feet', page: PracticeInfo},
                 {label: 'Shoulders', page: PracticeInfo2}

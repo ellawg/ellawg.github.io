@@ -1,4 +1,5 @@
 <template>
+<v-ons-page>
   <div class="practice-info">
     <v-ons-card>
 			<h1 class="title">Feel Your Feet</h1>
@@ -16,6 +17,7 @@
 			</ul>
     </v-ons-card>
   </div>
+	</v-ons-page>
 </template>
 
 <script>
