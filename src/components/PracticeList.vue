@@ -1,27 +1,46 @@
 <template>
   <div class="practice">
-    <!-- <v-ons-page>
+    <v-ons-page>
+      <div class="card"  v-for="practice in practices" :key="practice.id">
+        <div class="practice-header" v-bind="practice">{{practice.name}}</div>
+      </div>
       <PracticeCard/>
-    </v-ons-page> -->
+    </v-ons-page>
   </div>
 </template>
 
 <script>
 //import PracticeCard from "./PracticeCard"
 export default {
-  name: 'PracticeList',
+  name: "PracticeList",
   //components: PracticeCard,
-  data(){
+  data() {
     return {
-      practice1: {name: 'p1', id: 1},
-      practice2: {name: 'p2', id: 2},
-      practice3: {name: 'p3', id: 3}
-    }
+      practices: [
+        {
+          name: "Feel Your Feet",
+          moves: [
+            "Stand on your feet.",
+            "Experience the contact with the ground.",
+            "Feel into the soles of the feet.",
+            "Feel the knees.",
+            "The hips.",
+            "The spine.",
+            "Shoulders.",
+            "Neck.",
+            "Head.",
+            "Feel the connection between the top of the head and the feet."
+          ],
+          id: 1
+        },
+        { name: "p2", id: 2 },
+        { name: "p3", id: 3 }
+      ]
+    };
   }
-}
+};
 </script>
 
 
 <style scoped>
-
 </style>
