@@ -1,15 +1,16 @@
 <template>
   <div class="practice">
-    <v-ons-page>
+    <!-- <v-ons-page>
       <PracticeCard/>
-    </v-ons-page>
+    </v-ons-page> -->
   </div>
 </template>
 
 <script>
+//import PracticeCard from "./PracticeCard"
 export default {
   name: 'PracticeList',
-  components: PracticeCard,
+  //components: PracticeCard,
   data(){
     return {
       practice1: {name: 'p1', id: 1},

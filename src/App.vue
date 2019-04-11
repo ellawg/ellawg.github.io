@@ -2,17 +2,20 @@
   <div id="app">
     <!--<img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to your relaxation app"/>-->
-    <SplashScreen/>
+    <!--<SplashScreen/>-->
+    <MainPage/>
   </div>
 </template>
 
 <script>
-import SplashScreen from './components/SplashScreen.vue'
+//import SplashScreen from './components/SplashScreen.vue'
+import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'app',
   components: {
-    SplashScreen
+    //SplashScreen,
+    MainPage
   }
 }
 </script>
@@ -24,7 +27,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #FFFEFB;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 body{
   background:  #5eb4dd;
