@@ -1,7 +1,8 @@
 <template>
   <div class="practice-card">
     <v-ons-card>
-      <div class="title">{{card.name}}</div>
+      <p>hej</p>
+      <div class="title">{{$this.route.params}}</div>
     </v-ons-card>
   </div>
 </template>
