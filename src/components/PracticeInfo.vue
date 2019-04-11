@@ -4,7 +4,7 @@
     <v-ons-card>
       <div class="title">{{practice.name}}</div>
       <ul class="info-list">
-        <li v-for="move in practice.moves">{{move}}</li>
+        <li v-for="(move, index) in practice.moves" :key="index">{{move}}</li>
       </ul>
     </v-ons-card>
   </div>
