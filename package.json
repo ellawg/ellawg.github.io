@@ -11,7 +11,8 @@
     "core-js": "^2.6.5",
     "onsenui": "^2.10.8",
     "vue": "^2.6.6",
-    "vue-onsenui": "^2.6.2"
+    "vue-onsenui": "^2.6.2",
+    "vue-router": "^3.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",
