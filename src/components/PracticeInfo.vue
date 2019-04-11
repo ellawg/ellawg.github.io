@@ -1,5 +1,5 @@
 <template>
-  <div class="practice-card">
+  <div class="practice-info">
     <v-ons-card>
       <p>hej</p>
       <div class="title">{{$this.route.params}}</div>
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'PracticeCard',
+  name: 'PracticeInfo',
 }
 </script>
 
