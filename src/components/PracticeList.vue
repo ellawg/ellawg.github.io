@@ -1,13 +1,11 @@
 <template>
   <div class="practice">
-    <v-ons-page>
       <div class="card" v-for="practice in practices" :key="practice.id">
         <router-link to="/PracticeCard">
         <div class="practice-header">{{practice.name}}</div>
         </router-link>
       </div>
       <!--<PracticeCard/>-->
-    </v-ons-page>
   </div>
 </template>
 
