@@ -2,20 +2,21 @@
   <div id="app">
     <!--<img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to your relaxation app"/>-->
-    <!--<SplashScreen/>-->
-    <MainPage/>
+    <!--<SplashScreen/>
+    <MainPage/>-->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 //import SplashScreen from './components/SplashScreen.vue'
-import MainPage from './components/MainPage.vue'
+//import MainPage from './components/MainPage.vue'
 
 export default {
   name: 'app',
   components: {
     //SplashScreen,
-    MainPage
+    //MainPage
   }
 }
 </script>

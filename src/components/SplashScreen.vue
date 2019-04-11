@@ -5,8 +5,9 @@
     <div class="logo">
       <img src="../assets/lotus-position.png">
     </div>
-    <v-ons-button class="button">NEXT</v-ons-button>
-
+    <router-link to="/MainPage">
+      <v-ons-button class="button">NEXT</v-ons-button>
+    </router-link>
   </div>
 </template>
 
@@ -40,17 +41,16 @@ h1 {
 .logo {
   display: flex;
   justify-content: center;
-  padding:50px;
+  padding: 50px;
 }
-img{
+img {
   width: 200px;
-  height:200px;
-
+  height: 200px;
 }
 
-.button{
+.button {
   background: whitesmoke;
   margin-top: 20px;
-  color: #E28C8D
+  color: #e28c8d;
 }
 </style>
