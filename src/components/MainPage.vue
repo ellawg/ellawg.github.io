@@ -1,4 +1,5 @@
 <template>
+
   <v-ons-page>
     <v-ons-toolbar style="height: 150px" modifier="cover-content">
       <div class="center">
@@ -27,16 +28,17 @@ export default {
    Header
   },
   data() {
-    return {
-      activeIndex: 0,
-      tabs: [
-        { label: "About", page: About },
-        { label: "Feet", page: PracticeInfo },
-        { label: "Shoulders", page: PracticeInfo2 },
-        { label: "Face", page: PracticeInfo3 }
-      ]
-    };
-  }
+        return {
+            activeIndex: 0,
+            tabs: [
+                {icon: "fa-question", page: About},
+                {label: 'Feet', page: PracticeInfo},
+                {label: 'Shoulders', page: PracticeInfo2},
+                {label: 'Face', page: PracticeInfo3}
+                
+            ]
+        }
+    }
 };
 </script>
 
@@ -45,6 +47,10 @@ export default {
 img {
   width: 100%;
 }
+ons-icon{
+  color:lightgray;
+}
+
 .header{
   height: 60px;
 }
