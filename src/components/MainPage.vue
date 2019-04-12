@@ -9,6 +9,7 @@
 //import Header from "./Header"
 import PracticeInfo from "./PracticeInfo"
 import PracticeInfo2 from "./PracticeInfo2"
+import PracticeInfo3 from "./PracticeInfo3"
 import About from "./About"
 
 
@@ -20,6 +21,7 @@ export default {
             tabs: [
                 {label: 'Feet', page: PracticeInfo},
                 {label: 'Shoulders', page: PracticeInfo2},
+                {label: 'Face', page: PracticeInfo3}
                 {label: 'About', page: About}
             ]
         }

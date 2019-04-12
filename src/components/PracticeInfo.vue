@@ -3,6 +3,7 @@
   <div class="practice-info">
     <v-ons-card>
 			<h1 class="title">Feel Your Feet</h1>
+			<img src="../assets/photo-feet.jpg"/>
 			<ul>
 				<li>Stand on your feet.</li>
 				<li>Experience the contact with the ground.</li>
@@ -24,7 +25,6 @@
 export default {
   name: "PracticeInfo",
 };
-//<div class="title">{{$this.route.params.practice.name}}</div>
 </script>
 
 

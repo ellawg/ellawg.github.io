@@ -2,18 +2,16 @@
 <v-ons-page>
   <div class="practice-info">
     <v-ons-card>
-			<h1 class="title">Feel Your</h1>
+			<h1>Feel Your Shoulders</h1>
+			<img src="../assets/photo-shoulders-1.jpg"/>
 			<ul>
-				<li>Stand on your feet.</li>
-				<li>Experience the contact with the ground.</li>
-				<li>Feel into the soles of the feet.</li>
-				<li>Feel the knees.</li>
-				<li>The hips.</li>
-				<li>The spine.</li>
-				<li>Shoulders.</li>
-				<li>Neck.</li>
-				<li>Head.</li>
-				<li>Feel the connection between the top of the head and the feet.</li>
+				<li>Let your arms hang loose.</li>
+				<li>Become aware of the shoulders.</li>
+				<li>Slightly lift one shoulder and release it.</li>
+				<li>Let the shoulder come all the way down.</li>
+				<li>Lift the other shoulder and release it.</li>
+				<li>Alternate three more times on each side.</li>
+				<li>Experience the breath flowing in and out of the body.</li>
 			</ul>
     </v-ons-card>
   </div>
@@ -24,7 +22,6 @@
 export default {
   name: "PracticeInfo2",
 };
-//<div class="title">{{$this.route.params.practice.name}}</div>
 </script>
 
 
