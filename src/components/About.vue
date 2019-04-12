@@ -1,12 +1,14 @@
 <template>
-  <div class="about">
-    <Header/>
-    <v-ons-card>
-      <h2>About</h2>
-      <p>Thank you for using our relapping app.</p>
-      <p>Sit back and just Relapp...</p>
-    </v-ons-card>
-  </div>
+  <v-ons-page>
+    <div class="about">
+      <Header/>
+      <v-ons-card>
+        <h2>About</h2>
+        <p>Thank you for using our relapping app.</p>
+        <p>Sit back and just Relapp...</p>
+      </v-ons-card>
+    </div>
+  </v-ons-page>
 </template>
 
 <script>

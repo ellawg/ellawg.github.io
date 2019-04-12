@@ -18,6 +18,7 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  margin:20px;
 }
 .header > *{
     margin-right: 50px;
@@ -28,5 +29,6 @@ img{
 }
 h1{
   font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif
 }
 </style>

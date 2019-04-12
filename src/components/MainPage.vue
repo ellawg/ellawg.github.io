@@ -1,12 +1,12 @@
 <template>
   <v-ons-page>
-    <v-ons-tabbar position="top" :index.sync="activeIndex" :tabs="tabs">
+    <v-ons-tabbar position="top" swipeable :index.sync="activeIndex" :tabs="tabs">
     </v-ons-tabbar>
+    <Header/>
   </v-ons-page>
 </template>
 
 <script>
-//import Header from "./Header"
 import PracticeInfo from "./PracticeInfo"
 import PracticeInfo2 from "./PracticeInfo2"
 import PracticeInfo3 from "./PracticeInfo3"
@@ -19,10 +19,11 @@ export default {
         return {
             activeIndex: 0,
             tabs: [
+                {label: 'About', page: About},
                 {label: 'Feet', page: PracticeInfo},
                 {label: 'Shoulders', page: PracticeInfo2},
                 {label: 'Face', page: PracticeInfo3}
-                {label: 'About', page: About}
+                
             ]
         }
     }
@@ -30,7 +31,10 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
+img{
+  width:100%;
+}
 
 </style>
 

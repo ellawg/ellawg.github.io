@@ -1,6 +1,7 @@
 <template>
 <v-ons-page>
   <div class="practice-info">
+		<Header/>
     <v-ons-card>
 			<h1>Feel Your Shoulders</h1>
 			<img src="../assets/photo-shoulders-1.jpg"/>
@@ -19,8 +20,13 @@
 </template>
 
 <script>
+import Header from "./Header"
+
 export default {
-  name: "PracticeInfo2",
+	name: "PracticeInfo2",
+	components:{
+		Header
+	}
 };
 </script>
 
