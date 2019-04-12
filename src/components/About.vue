@@ -1,7 +1,6 @@
 <template>
   <v-ons-page>
     <div class="about">
-      <Header/>
       <v-ons-card>
         <h2>About</h2>
         <p>Thank you for using our relapping app.</p>
@@ -12,12 +11,8 @@
 </template>
 
 <script>
-import Header from "./Header";
 
 export default {
-  components: {
-    Header
-  }
 };
 </script>
 
@@ -33,6 +28,9 @@ h2 {
 #button {
   background: white;
   color: #e28c8d;
+}
+.about{
+  margin-top: 120px;
 }
 </style>
 

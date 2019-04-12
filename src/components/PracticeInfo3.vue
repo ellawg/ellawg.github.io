@@ -1,7 +1,6 @@
 <template>
 <v-ons-page>
   <div class="practice-info">
-		<Header/>
     <v-ons-card>
 			<h1>Feel Your Face</h1>
 			<img src="../assets/photo-face-unused.jpg"/>
@@ -26,22 +25,14 @@
 </template>
 
 <script>
-import Header from "./Header"
 
 export default {
 	name: "PracticeInfo3",
-	components:{
-   Header
-  },
+
 };
 </script>
 
 
 <style scoped>
-.practice-info {
-  color: #000;
-}
-.title {
-  font-size: 2em;
-}
+
 </style>
