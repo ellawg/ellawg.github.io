@@ -1,36 +1,61 @@
 <template>
-  <div class="container">
-    <Header/>
-    <router-link to="/About">
-      <v-ons-fab id="button" position="bottom right">
-        <v-ons-icon icon="md-info-outline"></v-ons-icon>
-      </v-ons-fab>
-    </router-link>
-    <div class="pList">
-      <PracticeList/>
-    </div>
-  </div>
+
+  <v-ons-page>
+    <v-ons-toolbar style="height: 150px" modifier="cover-content">
+      <div class="center">
+        <Header/>
+      </div>
+    </v-ons-toolbar>
+
+    <v-ons-tabbar
+      position="bottom"
+      swipeable
+      :index.sync="activeIndex"
+      :tabs="tabs"
+    ></v-ons-tabbar>
+  </v-ons-page>
 </template>
 
 <script>
-import Header from "./Header";
-import PracticeList from "./PracticeList";
+import PracticeInfo from "./PracticeInfo";
+import PracticeInfo2 from "./PracticeInfo2";
+import PracticeInfo3 from "./PracticeInfo3";
+import About from "./About";
+import Header from "./Header"
 
 export default {
-  components: {
-    Header,
-    PracticeList
+  components:{
+   Header
   },
   data() {
-    return {};
-  }
+        return {
+            activeIndex: 0,
+            tabs: [
+                {icon: "fa-question", page: About},
+                {label: 'Feet', page: PracticeInfo},
+                {label: 'Shoulders', page: PracticeInfo2},
+                {label: 'Face', page: PracticeInfo3}
+                
+            ]
+        }
+    }
 };
 </script>
 
 
-<style scoped>
-#button {
-  background: #e28c8d;
+<style>
+img {
+  width: 100%;
+}
+ons-icon{
+  color:lightgray;
+}
+
+.header{
+  height: 60px;
+}
+.tabbar{
+  background-color: #334d5c !important ;
 }
 </style>
 

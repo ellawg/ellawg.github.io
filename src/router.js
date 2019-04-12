@@ -12,7 +12,7 @@ export default new VueRouter({
   routes: [
     { path: "/",name: 'SplashScreen', component: SplashScreen },
     { path: "/MainPage", component: MainPage },
-    { path: "/:practiceId", component: PracticeInfo, name: 'PracticeInfo'}
-    { path: "/About", component: About }
+    { path: "/:practiceId", component: PracticeInfo, name: 'PracticeInfo'},
+    { path: "/About", component: About },
   ]
 });
