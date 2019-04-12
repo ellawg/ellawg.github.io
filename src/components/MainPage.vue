@@ -1,8 +1,8 @@
 <template>
+
   <v-ons-page>
-    <v-ons-tabbar position="top" swipeable :index.sync="activeIndex" :tabs="tabs">
+    <v-ons-tabbar class="tab" position="top" swipeable :index.sync="activeIndex" :tabs="tabs">
     </v-ons-tabbar>
-    <Header/>
   </v-ons-page>
 </template>
 
@@ -12,14 +12,13 @@ import PracticeInfo2 from "./PracticeInfo2"
 import PracticeInfo3 from "./PracticeInfo3"
 import About from "./About"
 
-
 export default {
 
   data() {
         return {
             activeIndex: 0,
             tabs: [
-                {label: 'About', page: About},
+                {icon: "fa-question", page: About},
                 {label: 'Feet', page: PracticeInfo},
                 {label: 'Shoulders', page: PracticeInfo2},
                 {label: 'Face', page: PracticeInfo3}
@@ -34,6 +33,9 @@ export default {
 <style>
 img{
   width:100%;
+}
+ons-icon{
+  color:lightgray;
 }
 
 </style>
