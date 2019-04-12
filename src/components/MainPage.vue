@@ -9,6 +9,7 @@
 //import Header from "./Header"
 import PracticeInfo from "./PracticeInfo"
 import PracticeInfo2 from "./PracticeInfo2"
+import PracticeInfo3 from "./PracticeInfo3"
 
 export default {
   data() {
@@ -16,7 +17,8 @@ export default {
             activeIndex: 0,
             tabs: [
                 {label: 'Feet', page: PracticeInfo},
-                {label: 'Shoulders', page: PracticeInfo2}
+                {label: 'Shoulders', page: PracticeInfo2},
+                {label: 'Face', page: PracticeInfo3}
             ]
         }
     }
